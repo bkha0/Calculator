@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+body {
+    background: #ebe6e0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    background: #4c7766;
+    width: 450px;
+    height: 550px;
+    padding: 12px;
+    border-radius: 12px;
+}
+
+.container .display {
+    width: 100%;
+    height: 150px;
+    margin-bottom: 8px;
+}
+
+.display #display {
+    background: #ebe6e0;
+    border-radius: 12px;
+    border: none;
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    padding: 8px;
+    outline: none;
+    font-size: 3em;
+    color: #283c35;
+}
+
+.container .btns {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 6px;
+}
+
+.btns button {
+    height: 60px;
+    border: none;
+    border-radius: 8px;
+    font-size: 2em;
+    font-weight: 800;
+    background: #283c35;
+    color: #ebe6e0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease;
+}
+
+.btns button:hover {
+    background: #ebe6e0;
+    color: #283c35;
+}
+
+#equal-btn {
+    grid-column: span 2;
+}
+
+.btns .op {
+    background: #ebe6e0;
+    color: #283c35;
+}
+
+.btns .op:hover {
+    background: #283c35;
+    color: #ebe6e0;
+}
+
+.btns .bs {
+    background: #c4d6c4;
+}
+
+.shake {
+    animation: shakeEffect 0.5s cubic-bezier(.36,.07,.19,.97) both;
+}
+
+@keyframes shakeEffect {
+    10%, 90% { transform: translate3d(-1px, 0, 0); }
+    20%, 80% { transform: translate3d(2px, 0, 0); }
+    30%, 50%, 70% { transform: translate3d(-3px, 0, 0); }
+    40%, 60% { transform: translate3d(3px, 0, 0); }
+}, 0, 0); }
+}
